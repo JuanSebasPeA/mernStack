@@ -1,0 +1,145 @@
+
+/* navigation styles */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5d964e;
+  padding: 10px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.nav ul li a:hover {
+  opacity: 0.8;
+}
+
+.nav ul li a.active {
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.nav ul li a.active:hover {
+  opacity: 1;
+}
+
+/* Form styles */
+form {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 30px auto;
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.2);
+}
+
+form label {
+  font-weight: bold;
+  font-size: 22px; ;
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+form input {
+  margin-bottom: 15px;
+  border-radius: 5px ;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px; 
+}
+
+form input::placeholder {
+  color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+form textarea {
+    margin-bottom: 15px;
+    border-radius: 5px ;
+    width: 90%;
+  margin: 0 auto;
+  padding: 10px; 
+}
+
+form textarea::placeholder {
+  color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+form button {
+  margin-top: 15px;
+    width: 100%;
+    border-radius: 5px ;
+    background-color: #5d964e;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    opacity: 0.8;
+}
+
+.tasks {
+    width: 100%;
+    padding: 15px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* task styles */
+.task {
+  list-style: none;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 30px auto;
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.2);
+}
+
+.buttons-container {
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.2) ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* delete and edit buttons */
+button {
+  width: 48%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+

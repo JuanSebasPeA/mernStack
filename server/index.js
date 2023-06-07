@@ -1,8 +1,9 @@
 /* Author: Juan Sebastian Peña Angarita */
 
-console.log("Hello World");
 //importing express module
 const express = require("express");
+//importing cors module
+const cors = require("cors");
 //importing config module
 const {port} = require("./config");
 //importing routes module
@@ -11,6 +12,7 @@ const routes = require("./routes/tasks.routes.js");
 
 //creating express app
 const app = express();
+app.use(cors());
 
 //middlewares
 app.use(express.json());

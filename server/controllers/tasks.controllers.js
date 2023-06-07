@@ -8,9 +8,9 @@ const getTasks = async (req, res) => {
   //getting all tasks
   try {
     const [result] = await pool.query("SELECT * FROM tasks");
-    console.log(result);
+    //console.log(result);
 
-    res.send("Returning all tasks");
+    res.json(result);
   } catch (error) {
     console.log(error);
   }
@@ -72,9 +72,14 @@ const createTask = async (req, res) => {
     console.log("Task created");
     console.log(result);
 
-    res.send("Creating a task");
+    return res.json({
+      title,
+      description,
+      done,
+    });
   } catch (error) {
     console.log(error);
+    return res.status(500).json({ message: "Internal server error" });
   }
 };
 
