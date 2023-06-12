@@ -1,6 +1,7 @@
 import { Form, Formik } from "formik";
 import { useTasks } from "../context/TaskProvider";
 
+
 const TaskForm = () => {  
 
   const { createTaskContext } = useTasks();
@@ -24,6 +25,11 @@ const TaskForm = () => {
             console.log(response);
             // The function resetForm is called to reset the form
             actions.resetForm();
+            //redirecting to root with redirect
+            actions.props.history.push("/");
+            //redirecting
+            //window.location.href = "/";
+            
           } catch (error) {
             console.log(error);
           }
